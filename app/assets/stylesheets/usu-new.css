@@ -1,0 +1,20 @@
+.new-title {
+    color: #007BFF; /* Color azul para el título */
+    font-size: 2em; /* Tamaño de fuente mayor */
+    text-align: center; /* Centrar el título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.link-container {
+    text-align: center; /* Centrar el enlace */
+    margin-top: 20px; /* Espacio encima del enlace */
+}
+
+.link {
+    color: #007BFF; /* Color azul para el enlace */
+    text-decoration: none; /* Sin subrayado en el enlace */
+}
+
+.link:hover {
+    text-decoration: underline; /* Subrayar al pasar el mouse */
+}

@@ -1,0 +1,22 @@
+<% content_for :head do %>
+  <%= stylesheet_link_tag 'usu-inde', media: 'all' %> <!-- Aquí enlazamos nuestro CSS -->
+<% end %>
+
+<p style="color: blue"><%= notice %></p>
+
+<% content_for :title, "Usuarios" %>
+
+<h1 class="usuarios-title">Usuarios</h1>
+
+<div id="usuarios" class="usuarios-container">
+  <% @usuarios.each do |usuario| %>
+    <div class="usuario-item">
+      <%= render usuario %>
+      <p class= " usuario-link-container">
+        <%= link_to "Show this usuario", usuario, class: "usuario-link" %>
+      </p>  
+    </div>
+  <% end %>
+</div>
+
+<%= link_to "New usuario", new_usuario_path, class: "new-usuario-link" %>

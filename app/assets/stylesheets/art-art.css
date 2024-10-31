@@ -1,0 +1,18 @@
+.usuario-info {
+    margin-bottom: 15px; /* Espacio entre bloques de usuario */
+    padding: 10px; /* Espacio interno */
+    border: 1px solid #007BFF; /* Borde azul */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #f9f9f9; /* Fondo claro para el contenedor */
+}
+
+.usuario-nombre,
+.usuario-email {
+    color: #007BFF; /* Color azul para el texto */
+    font-size: 1.2em; /* Tamaño de fuente mayor */
+}
+
+.usuario-nombre strong,
+.usuario-email strong {
+    color: #000; /* Color negro para el texto en negrita */
+}

@@ -1,0 +1,15 @@
+<% content_for :head do %>
+  <%= stylesheet_link_tag 'co-new', media: 'all' %> <!-- Enlace al archivo CSS para crear un nuevo usuario -->
+<% end %>
+
+<% content_for :title, "New comentario" %>
+
+<h1 class="new-title">New comentario</h1>
+
+<%= render "form", comentario: @comentario %>
+
+<br>
+
+<div class="link-container">
+  <%= link_to "Back to comentarios", comentarios_path %>
+</div>

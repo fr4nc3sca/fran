@@ -1,0 +1,14 @@
+<% content_for :head do %>
+  <%= stylesheet_link_tag 'art-new', media: 'all' %> <!-- Enlace al archivo CSS para crear un nuevo usuario -->
+<% end %>
+<% content_for :title, "New articulo" %>
+
+<h1 class="new-title">New articulo</h1>
+
+<%= render "form", articulo: @articulo %>
+
+<br>
+
+<div class="link-container">
+  <%= link_to "Back to articulos", articulos_path %>
+</div>

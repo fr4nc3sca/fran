@@ -1,0 +1,16 @@
+<% content_for :head do %>
+  <%= stylesheet_link_tag 'art-edit', media: 'all' %> <!-- Enlace al archivo CSS para editar -->
+<% end %>
+
+<% content_for :title, "Editing articulo" %>
+
+<h1 class="edit-title">Editing articulo</h1>
+
+<%= render "form", articulo: @articulo %>
+
+<br>
+
+<div class="link-container>
+  <%= link_to "Show this articulo", @articulo %> |
+  <%= link_to "Back to articulos", articulos_path %>
+</div>

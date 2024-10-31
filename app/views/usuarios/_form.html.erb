@@ -1,0 +1,35 @@
+<% content_for :head do %>
+  <%= stylesheet_link_tag 'usu-form', media: 'all' %> <!-- Aquí enlazamos el nuevo CSS -->
+<% end %>
+
+
+<div class="form-container"> <!-- Clase para el contenedor del formulario -->
+  <h1 class="form-title">Formulario de Usuario</h1> <!-- Título del formulario -->
+<%= form_with(model: usuario) do |form| %>
+  <% if usuario.errors.any? %>
+    <div class="error-messages" style="color: red">
+      <h2><%= pluralize(usuario.errors.count, "error") %> prohibited this usuario from being saved:</h2>
+
+      <ul>
+        <% usuario.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-field">
+    <%= form.label :nombre, style: "display: block" %>
+    <%= form.text_field :nombre %>
+  </div>
+
+  <div class="form-field">
+    <%= form.label :email, style: "display: block" %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div>
+    <%= form.submit 'Guardar', class: 'form-submit'%>
+  </div>
+<% end %>
+</div>

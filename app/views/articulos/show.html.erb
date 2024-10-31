@@ -1,0 +1,14 @@
+<% content_for :head do %>
+  <%= stylesheet_link_tag 'art-show', media: 'all' %> <!-- Enlace al archivo CSS para mostrar usuario -->
+<% end %>
+
+<p style="color: blue"><%= notice %></p>
+
+<%= render @articulo %>
+
+<div class="link-container">
+  <%= link_to "Edit this articulo", edit_articulo_path(@articulo) %> |
+  <%= link_to "Back to articulos", articulos_path %>
+
+  <%= button_to "Destroy this articulo", @articulo, method: :delete,  class: 'delete-button' %>
+</div>

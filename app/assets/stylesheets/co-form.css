@@ -1,0 +1,45 @@
+.form-container {
+    margin: 20px; /* Espacio alrededor del formulario */
+    padding: 20px; /* Espacio interno del formulario */
+    border: 1px solid #007BFF; /* Borde azul */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: #f9f9f9; /* Fondo claro para el formulario */
+}
+
+.form-title {
+    color: #007BFF; /* Color azul para el título */
+    font-size: 2em; /* Tamaño de fuente mayor */
+    text-align: center; /* Centrar el título */
+}
+
+.form-field {
+    margin-bottom: 15px; /* Espacio entre campos del formulario */
+}
+
+.form-input {
+    width: 100%; /* Ancho completo para los campos de entrada */
+    padding: 10px; /* Espacio interno en los campos de entrada */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados en campos de entrada */
+}
+
+.form-submit {
+    background-color: #007BFF; /* Fondo azul del botón */
+    color: white; /* Color del texto en el botón */
+    padding: 10px 15px; /* Espaciado interno del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+}
+
+.form-submit:hover {
+    background-color: #0056b3; /* Color más oscuro al pasar el mouse */
+}
+
+.error-messages {
+    margin-bottom: 15px; /* Espacio debajo de los mensajes de error */
+    padding: 10px; /* Espacio interno para mensajes de error */
+    background-color: #f8d7da; /* Fondo claro para mensajes de error */
+    border: 1px solid #f5c6cb; /* Borde rojo claro */
+    border-radius: 5px; /* Bordes redondeados */
+}

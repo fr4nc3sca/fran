@@ -1,0 +1,20 @@
+<% content_for :head do %>
+  <%= stylesheet_link_tag 'cat-inde', media: 'all' %> <!-- Aquí enlazamos nuestro CSS -->
+<% end %>
+
+<p style="color: blue"><%= notice %></p>
+
+<% content_for :title, "Categoria" %>
+
+<h1  class="usuarios-title" >Categoria</h1>
+
+<div id="categoria" class="usuarios-container"> 
+  <% @categoria.each do |categorium| %>
+    <%= render categorium %>
+    <p class= " usuario-link-container">
+      <%= link_to "Show this categorium", categorium , class: "usuario-link"%>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New categorium", new_categorium_path, class: "new-usuario-link" %>

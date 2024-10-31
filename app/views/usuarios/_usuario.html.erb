@@ -1,0 +1,16 @@
+<% content_for :head do %>
+  <%= stylesheet_link_tag 'usu-usu', media: 'all' %> <!-- Aquí enlazamos el nuevo CSS -->
+<% end %>
+
+<div id="<%= dom_id usuario %>" class="usuario-info">
+  <p class="usuario-nombre">
+    <strong>Nombre:</strong>
+    <%= usuario.nombre %>
+  </p>
+
+  <p class="usuario-email">
+    <strong>Email:</strong>
+    <%= usuario.email %>
+  </p>
+
+</div>

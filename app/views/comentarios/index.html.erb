@@ -1,0 +1,22 @@
+<% content_for :head do %>
+  <%= stylesheet_link_tag 'co-inde', media: 'all' %> <!-- Aquí enlazamos nuestro CSS -->
+<% end %>
+
+<p style="color: blue"><%= notice %></p>
+
+<% content_for :title, "Comentarios" %>
+
+<h1 class="usuarios-title">Comentarios</h1>
+
+<div id="comentarios"  class="usuarios-container">
+  <% @comentarios.each do |comentario| %>
+    <div class="usuario-item">
+      <%= render comentario %>
+    <p class= " usuario-link-container">
+      <%= link_to "Show this comentario", comentario %>
+    </p>
+    </div>
+  <% end %>
+</div>
+
+<%= link_to "New comentario", new_comentario_path, class: "new-usuario-link" %>

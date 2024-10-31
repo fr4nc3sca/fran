@@ -1,0 +1,30 @@
+/* app/assets/stylesheets/show.css */
+
+.link-container {
+    text-align: center; /* Centrar los enlaces */
+    margin-top: 20px; /* Espacio encima de los enlaces */
+}
+
+.link {
+    color: #007BFF; /* Color azul para los enlaces */
+    text-decoration: none; /* Sin subrayado en los enlaces */
+    margin: 0 10px; /* Espacio horizontal entre enlaces */
+}
+
+.link:hover {
+    text-decoration: underline; /* Subrayar al pasar el mouse */
+}
+
+.delete-button {
+    background-color: red; /* Color de fondo rojo para el botón de eliminar */
+    color: white; /* Color del texto blanco */
+    border: none; /* Sin borde */
+    padding: 10px; /* Espaciado interior */
+    cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+    margin-top: 30px;
+}
+
+.delete-button:hover {
+    background-color: darkred; /* Color más oscuro al pasar el mouse */
+   
+}

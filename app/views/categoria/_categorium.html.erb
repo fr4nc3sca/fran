@@ -1,0 +1,16 @@
+<% content_for :head do %>
+  <%= stylesheet_link_tag 'cat-cat', media: 'all' %> <!-- Aquí enlazamos el nuevo CSS -->
+<% end %>
+
+<div id="<%= dom_id categorium %>" class="usuario-info">
+  <p class="usuario-nombre">
+    <strong>Nombre:</strong>
+    <%= categorium.nombre %>
+  </p>
+
+  <p class="usuario-email">
+    <strong>Descripcion:</strong>
+    <%= categorium.descripcion %>
+  </p>
+
+</div>

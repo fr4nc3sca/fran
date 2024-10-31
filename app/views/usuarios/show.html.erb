@@ -1,0 +1,14 @@
+<% content_for :head do %>
+  <%= stylesheet_link_tag 'usu-show', media: 'all' %> <!-- Enlace al archivo CSS para mostrar usuario -->
+<% end %>
+
+<p style="color: blue"><%= notice %></p>
+
+<%= render @usuario %>
+
+<div class="link-container">
+  <%= link_to "Edit this usuario", edit_usuario_path(@usuario) %> |
+  <%= link_to "Back to usuarios", usuarios_path %>
+
+  <%= button_to "Destroy this usuario", @usuario, method: :delete, class: 'delete-button' %>
+</div>

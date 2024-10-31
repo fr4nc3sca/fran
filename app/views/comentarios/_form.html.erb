@@ -1,0 +1,40 @@
+<% content_for :head do %>
+  <%= stylesheet_link_tag 'co-form', media: 'all' %> <!-- Aquí enlazamos el nuevo CSS -->
+<% end %>
+
+
+<div class="form-container"> <!-- Clase para el contenedor del formulario -->
+  <h1 class="form-title">Formulario de Usuario</h1> <!-- Título del formulario -->
+<%= form_with(model: comentario) do |form| %>
+  <% if comentario.errors.any? %>
+    <div class="error-messages" style="color: red">
+      <h2><%= pluralize(comentario.errors.count, "error") %> prohibited this comentario from being saved:</h2>
+
+      <ul>
+        <% comentario.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-field">
+    <%= form.label :contenido, style: "display: block" %>
+    <%= form.text_area :contenido %>
+  </div>
+
+  <div class="form-field">
+    <%= form.label :usuario_id, style: "display: block" %>
+    <%= form.text_field :usuario_id %>
+  </div>
+
+  <div class="form-field">
+    <%= form.label :articulo_id, style: "display: block" %>
+    <%= form.text_field :articulo_id %>
+  </div>
+
+  <div>
+    <%= form.submit'Guardar', class: 'form-submit' %>
+  </div>
+<% end %>
+</div>

@@ -1,0 +1,22 @@
+<% content_for :head do %>
+  <%= stylesheet_link_tag 'co-com', media: 'all' %> <!-- Aquí enlazamos el nuevo CSS -->
+<% end %>
+
+
+<div id="<%= dom_id comentario %>" class="comentario-info">
+  <p class="comentario-nombre">
+    <strong>Contenido:</strong>
+    <%= comentario.contenido %>
+  </p>
+
+  <p class="comentario-email">
+    <strong>Usuario:</strong>
+    <%= comentario.usuario_id %>
+  </p>
+
+  <p class="comentario-email">
+    <strong>Articulo:</strong>
+    <%= comentario.articulo_id %>
+  </p>
+
+</div>

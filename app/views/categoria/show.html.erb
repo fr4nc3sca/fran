@@ -1,0 +1,14 @@
+<% content_for :head do %>
+  <%= stylesheet_link_tag 'cat-show', media: 'all' %> <!-- Enlace al archivo CSS para mostrar usuario -->
+<% end %>
+
+<p style="color: bue"><%= notice %></p>
+
+<%= render @categorium %>
+
+<div class="link-container">
+  <%= link_to "Edit this categorium", edit_categorium_path(@categorium) %> |
+  <%= link_to "Back to categoria", categoria_path %>
+
+  <%= button_to "Destroy this categorium", @categorium, method: :delete, class: 'delete-button'%>
+</div>

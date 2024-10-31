@@ -1,0 +1,47 @@
+/* app/assets/stylesheets/usuarios.css.scss */
+
+body {
+    background-color: #f0f0f0; /* Color de fondo general */
+}
+
+.usuarios-title {
+    color: #1c34ac; /* Color verde para el título */
+    text-align: center; /* Centrar el texto */
+    font-size: 2em;
+    font-weight: 900;
+    font-weight: bolder; /* Tamaño de fuente */
+}
+
+.usuarios-container {
+    margin: 20px; /* Margen alrededor del contenedor */
+    padding: 10px; /* Espacio interno del contenedor */
+    border: 1px solid #ccc; /* Borde gris */
+}
+
+.usuario-item {
+    margin-bottom: 15px; /* Espacio entre elementos de usuario */
+    padding: 10px; /* Espacio interno de cada usuario */
+    border: 1px solid #eee; /* Borde claro */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: white; /* Fondo blanco para los elementos */
+}
+
+.usuario-link-container {
+    margin-top: 10px; /* Espacio arriba del enlace */
+}
+
+.usuario-link {
+    color: blue; /* Color del enlace de usuario */
+    text-decoration: underline; /* Subrayado del enlace */
+}
+
+.new-usuario-link {
+    display: block; /* Mostrar como bloque */
+    margin-top: 20px; /* Espacio arriba del enlace nuevo */
+    padding: 10px; /* Espacio interno del enlace nuevo */
+    background-color: #16168c; /* Fondo verde */
+    color: white; /* Color del texto */
+    text-align: center; /* Centrar el texto */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none;
+}

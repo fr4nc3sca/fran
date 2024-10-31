@@ -1,0 +1,14 @@
+<% content_for :head do %>
+  <%= stylesheet_link_tag 'co-show', media: 'all' %> <!-- Enlace al archivo CSS para mostrar usuario -->
+<% end %>
+
+<p style="color: blue"><%= notice %></p>
+
+<%= render @comentario %>
+
+<div class="link-container">
+  <%= link_to "Edit this comentario", edit_comentario_path(@comentario) %> |
+  <%= link_to "Back to comentarios", comentarios_path %>
+
+  <%= button_to "Destroy this comentario", @comentario, method: :delete, class: 'delete-button' %>
+</div>

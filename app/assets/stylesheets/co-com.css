@@ -1,0 +1,19 @@
+
+.comentario-info {
+    margin-bottom: 15px; /* Espacio entre bloques de usuario */
+    padding: 10px; /* Espacio interno */
+    border: 1px solid #007BFF; /* Borde azul */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #f9f9f9; /* Fondo claro para el contenedor */
+}
+
+.comentario-nombre,
+.comentario-email {
+    color: #007BFF; /* Color azul para el texto */
+    font-size: 1.2em; /* Tamaño de fuente mayor */
+}
+
+.comentario-nombre strong,
+.comentario-email strong {
+    color: #000; /* Color negro para el texto en negrita */
+}

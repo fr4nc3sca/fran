@@ -1,0 +1,22 @@
+
+<% content_for :head do %>
+  <%= stylesheet_link_tag 'art-inde', media: 'all' %> <!-- Aquí enlazamos nuestro CSS -->
+<% end %>
+<p style="color: blue"><%= notice %></p>
+
+<% content_for :title, "Articulos" %>
+
+<h1 class="usuarios-title">Articulos</h1>
+
+<div id="articulos" class="usuarios-container">
+  <% @articulos.each do |articulo| %>
+  <div class="usuario-item">
+    <%= render articulo %>
+    <p>
+      <%= link_to "Show this articulo", articulo , class: "usuario-link"%>
+    </p>
+  </div>
+  <% end %>
+</div>
+
+<%= link_to "New articulo", new_articulo_path, class: "new-usuario-link" %>

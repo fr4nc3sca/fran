@@ -1,0 +1,16 @@
+<% content_for :head do %>
+  <%= stylesheet_link_tag 'usu-edit', media: 'all' %> <!-- Enlace al archivo CSS para editar -->
+<% end %>
+
+<% content_for :title, "Editing usuario" %>
+
+<h1 class="edit-title">Editing usuario</h1>
+
+<%= render "form", usuario: @usuario %>
+
+<br>
+
+<div class="link-container">
+  <%= link_to "Show this usuario", @usuario %> |
+  <%= link_to "Back to usuarios", usuarios_path, class="link"%>
+</div>

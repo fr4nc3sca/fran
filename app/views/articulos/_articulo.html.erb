@@ -1,0 +1,21 @@
+<% content_for :head do %>
+  <%= stylesheet_link_tag 'art-art', media: 'all' %> <!-- Aquí enlazamos el nuevo CSS -->
+<% end %>
+
+<div id="<%= dom_id articulo %>" class="usuario-info">
+  <p class="usuario-nombre">
+    <strong>Titulo:</strong>
+    <%= articulo.titulo %>
+  </p>
+
+  <p class="usuario-nombre"> 
+    <strong>Contenido:</strong>
+    <%= articulo.contenido %>
+  </p>
+
+  <p class="usuario-nombre">
+    <strong>Usuario:</strong>
+    <%= articulo.usuario_id %>
+  </p>
+
+</div>

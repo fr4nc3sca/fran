@@ -1,0 +1,35 @@
+<% content_for :head do %>
+  <%= stylesheet_link_tag 'cat-form', media: 'all' %> <!-- Aquí enlazamos el nuevo CSS -->
+<% end %>
+
+
+div class="form-container"> <!-- Clase para el contenedor del formulario -->
+  <h1 class="form-title">Formulario de Usuario</h1> <!-- Título del formulario -->
+<%= form_with(model: categorium) do |form| %>
+  <% if categorium.errors.any? %>
+    <div class="error-messages" style="color: red">
+      <h2><%= pluralize(categorium.errors.count, "error") %> prohibited this categorium from being saved:</h2>
+
+      <ul>
+        <% categorium.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-field">
+    <%= form.label :nombre, style: "display: block" %>
+    <%= form.text_field :nombre %>
+  </div>
+
+  <div class="form-field">
+    <%= form.label :descripcion, style: "display: block" %>
+    <%= form.text_area :descripcion %>
+  </div>
+
+  <div>
+    <%= form.submit 'Guardar', class: 'form-submit' %>
+  </div>
+<% end %>
+</div>

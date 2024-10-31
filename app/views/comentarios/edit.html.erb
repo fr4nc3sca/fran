@@ -1,0 +1,16 @@
+<% content_for :head do %>
+  <%= stylesheet_link_tag 'co-edit', media: 'all' %> <!-- Enlace al archivo CSS para editar -->
+<% end %>
+
+<% content_for :title, "Editing comentario" %>
+
+<h1 class="edit-title">Editing comentario</h1>
+
+<%= render "form", comentario: @comentario %>
+
+<br>
+
+<div class="link-container">
+  <%= link_to "Show this comentario", @comentario %> |
+  <%= link_to "Back to comentarios", comentarios_path %>
+</div>
